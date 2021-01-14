@@ -1,0 +1,134 @@
+html{
+    background-image:url(back.jpg);
+}
+
+body{
+            
+    /*👇背景色の変更　hex
+    background-image: url(bg.jpg);*/
+    /*👇書体の変更*/ 
+    
+    
+    font-family: Meiryo;
+    margin:0;
+}
+div{
+    margin:padding 0;
+
+}
+/*ヘッダー部分*/
+header{
+    display: flex;
+
+}
+.message .padding {
+    padding: 8px;
+}
+
+
+header ul:nav-list{
+    margin-right: 500px;
+    position:relative;
+
+}
+.headline{
+    font-family:"Yu Gothic";
+    font-weight: 700;
+    padding:16px;
+    font-size: 40px;
+    text-decoration: none;
+    position:relative;
+}
+.headline:link, a:visited, a:hover, a:active {
+  color:#000000;
+  
+}
+.nav-list{
+    width:25%;
+    margin-left:auto;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    position:relative;
+}
+.nav-list-item{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    font-size:20px;
+    font-family: "Dancing Script",cursive;
+    text-decoration: none;
+    position:relative;
+
+}
+.keyword{
+    margin:0 0 0 0 ;
+    font-size:12px;
+}
+.search{
+    width:300px;
+    display:inline-block;
+    font-family: Meiryo;
+    position:relative;
+}
+.murasame{
+    border:2px;
+    background-color: aqua;
+}
+
+/*画面サイズが1060px以下であるときの画面配置処理*/
+@media screen and (max-width: 1240px){
+/*CSSをすべて初期の設定を戻す*/
+    header{
+    /*margin: 上 右 下 左*/
+    display:block;
+    
+    }
+.search{
+    width:100px;
+}
+.nav-list-item{
+    font-size:18px;
+    margin: 0 15px;
+    
+}
+h1.headline{
+    margin:10px 0 0 0; 
+    padding:10px 0 0 0;
+}
+ul.nav-list{
+    margin:0 0 0 0 ;
+    padding:0 0 0 0 ;
+}
+.keyword{
+    margin:0 0 0 0 ;
+}
+}
+.main-right{
+    background:#ffffff;
+    border:3px solid #000000;
+    width:29%;
+    float:right;
+    position:relative;
+ 
+}
+.main-mid{         
+    background:aqua; 
+    /*opacity:0.5;*/
+    margin:0;
+    padding:0;         
+    width: 70%;                   /*枠の横サイズ指定px単位*/
+    border: 2.5px solid #000000;  /*ボックスのふちを作る　サイズ　種類　色　の順番*/
+    float:left;                   /*左寄せ*/
+    position:relative;
+} 
+.footer-links{
+    background:#ffffff;
+
+    width:100%;
+    padding: 0 0;
+    margin : 0 auto;
+    text-align: center;
+    position:absolute;
+    bottom: 0;
+}

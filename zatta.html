@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja" class="html">
+
+    <head>
+
+        <link href="zatta.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>いろいろな物置き場</title>
+        <!--んじゃさいなら頑張って-->
+        <!--あとdiscに乗せといて-->
+    </head>
+    <body>
+        <!-- header -->
+        <div1>
+
+        
+            <header>
+                <a href="main.html"; class="headline";>
+                    暇人サークル備忘録 
+                </a>
+                <ul class="nav-list">
+                        <!--style="cursor: hand; cursor:pointer;"で文字にカーソルを合わせると手が出現する-->
+                    <a href="\\win-mvm91ruuv3j\file\homepage\member.html"; class="nav-list-item">Member</a>
+                    <a href="\\win-mvm91ruuv3j\file\homepage\Casinohome.html"; class="nav-list-item"; >Casino</a>
+                    <a href="\\win-mvm91ruuv3j\file\homepage\zatta.html"; class="nav-list-item">Others</a>
+                </ul>
+                
+                   
+            </header>
+        </div1>
+        <!--以下本体-->
+
+        <!--真ん中の編集-->
+        <div>
+            <style>
+                
+            </style>
+            <script type="text/javascript">
+            function disp(){
+
+            // 入力ダイアログを表示 ＋ 入力内容を collz に代入
+            collaz = window.prompt("計算させたい文字を入力してください", "");
+
+            
+            count =0;
+            sum = 0;
+            kei = collaz;
+            
+            while(kei>0){
+                
+                if(kei == 1){
+                    break
+                }
+
+                if(kei%2 == 0){
+                    kei=kei/2;
+                }else{
+                    kei=kei*3+1;
+                }
+                sum=sum+kei;
+                count=count+1;
+            }
+            sum= parseInt(sum)+ parseInt(collaz);
+            
+            window.alert("初期値"+collaz+"の計算回数は"+count+"回です。総和は"+sum+"です")
+
+            }
+            
+            </script>
+            <a class="main-mid">
+                <h1 >物置場所</h1>
+                <input type="button" value="コラッツ計算" onClick="disp()">
+
+            </a>
+        </div>
+        <!--右の編集-->
+        <div>
+            <a class="main-right">
+                    <form action="cgi-bin/example.cgi" method="post" class="search">
+                        <input type="search" name="search" placeholder="キーワードを入力">
+                        <input type="submit" name="submit" value="検索">
+                    </form>   <br>               
+                備忘録まとめ
+                <!--
+                    必ず日付を跨いだ時は日付を書いてまとめること
+
+                    --〇年　〇月〇日--
+                    〇〇旅行にいった感想
+                    --〇年　〇月〇日--
+                    レモネード作った
+
+                    のようにすること
+                    ！！！！記入方法<a href="URL">備忘録の題名</a>！！！！
+                -->
+            </a>
+        </div>    
+        <!--フッター-->
+        <footer>
+
+            <nav class="footer-links">
+                <a href="\\win-mvm91ruuv3j\file\homepage\member.html">Member</a>
+                <a href="\\win-mvm91ruuv3j\file\homepage\Casinohome.html">Casino</a>
+                <a href="\\win-mvm91ruuv3j\file\homepage\zatta.html">Others</a>
+                <a class="footer">
+                    お問い合わせ
+                </a>
+                
+                
+            </nav>
+            
+        </footer>
+
+
+      </body>
+</html>
